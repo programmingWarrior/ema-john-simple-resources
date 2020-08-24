@@ -1,15 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import Shop from './components/Shop/Shop';
+
+
+
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 style={{color:"red"}}>Welcome Mr.Shawon Ahmed</h1>
-       
-      </header>
+    <div>
+      <Header></Header>
+      <Shop></Shop> 
+      
     </div>
   );
 }
